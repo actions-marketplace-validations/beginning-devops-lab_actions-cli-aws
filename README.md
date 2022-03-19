@@ -8,7 +8,7 @@ Docker image for AWS CLI, also source for the AWS CLI GitHub Action.
 - name: S3 Sync
   uses: giboow/action-aws-cli@v1
   with:
-    args: s3 sync --delete --acl public-read localdir/ s3://remote-bucket/
+    args: aws s3 sync --delete --acl public-read localdir/ s3://remote-bucket/
   env:
     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -16,4 +16,4 @@ Docker image for AWS CLI, also source for the AWS CLI GitHub Action.
 ```
 
 ## Source
-I have duplicate [ItsKarma/aws-cli](https://github.com/ItsKarma/aws-cli) repository, my action use the latest aws-cli version. 
+Forked from [giboow/action-aws-cli](https://github.com/giboow/action-aws-cli) since i needed to add new tools and rework the flows
