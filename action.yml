@@ -1,9 +1,9 @@
-name: 'Action AWS CLI'
+name: 'Beginning DevOps - Github Actions for AWS CLI'
 description: 'GitHub Action for AWS CLI'
-author: giboow
+author: beginning-devops
 branding:
   icon: 'cloud'
-  color: 'orange'
+  color: 'blue'
 runs:
   using: docker
   image: Dockerfile
