@@ -1,3 +1,3 @@
-FROM amazon/aws-cli
+FROM buntu
 
 RUN yum install -y jq
