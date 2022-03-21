@@ -8,7 +8,7 @@ Docker image for AWS CLI, also source for the AWS CLI GitHub Action.
 - name: S3 Sync
   uses: beginning-devops/action-aws-cli@v1
   with:
-    args: aws s3 sync --delete --acl public-read localdir/ s3://remote-bucket/
+    args: s3 sync --delete --acl public-read localdir/ s3://remote-bucket/
   env:
     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}

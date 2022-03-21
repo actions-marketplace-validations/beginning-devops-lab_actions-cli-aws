@@ -1,6 +1,3 @@
-FROM python:3-alpine
+FROM amazon/aws-cli
 
-RUN apk add jq
-RUN pip3 --no-cache-dir install --upgrade awscliv2
-
-CMD ["aws"]
+RUN yum install -y jq
